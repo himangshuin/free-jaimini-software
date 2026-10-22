@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Jaimini Kundli: Chara Karakas, Karakamsa, Arudha Padas, Argala, Chara Dasha and sutra-referenced readings from the Jaimini Upadesa Sutras.">
+<meta name="theme-color" content="#fbf8f2">
+<title>Jaimini Kundli</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' fill='%23a94d27'%3E%3Cpath d='M18 4.5c2.9 4 3.1 7.4 0 10.2-3.1-2.8-2.9-6.2 0-10.2Z'/%3E%3Cpath d='M18 31.5c-2.9-4-3.1-7.4 0-10.2 3.1 2.8 2.9 6.2 0 10.2Z'/%3E%3Cpath d='M4.5 18c4-2.9 7.4-3.1 10.2 0-2.8 3.1-6.2 2.9-10.2 0Z'/%3E%3Cpath d='M31.5 18c-4 2.9-7.4 3.1-10.2 0 2.8-3.1 6.2-2.9 10.2 0Z'/%3E%3Ccircle cx='18' cy='18' r='3.1'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css?v=1">
+<link rel="stylesheet" href="css/jaimini.css?v=1">
+</head>
+<body data-tab="sum">
+<header class="top"><div class="wrap">
+ <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M18 4.5c2.9 4 3.1 7.4 0 10.2-3.1-2.8-2.9-6.2 0-10.2Z"/><path d="M18 31.5c-2.9-4-3.1-7.4 0-10.2 3.1 2.8 2.9 6.2 0 10.2Z"/><path d="M4.5 18c4-2.9 7.4-3.1 10.2 0-2.8 3.1-6.2 2.9-10.2 0Z"/><path d="M31.5 18c-4 2.9-7.4 3.1-10.2 0 2.8-3.1 6.2-2.9 10.2 0Z"/><circle cx="18" cy="18" r="3.1"/></svg></span><span class="brand-name">Jaimini Kundli</span></a>
+ <div class="ctl">
+    <div class="pref"><label for="ps2">Arudha rule</label><select id="ps2"><option value="std">Standard (10th / 4th correction)</option><option value="literal">Literal (Rao’s notes, none)</option></select></div>
+  <div class="pref style-pref"><label for="cs">Chart style</label><select id="cs"><option value="e">East Indian</option><option value="n">North Indian</option><option value="s">South Indian</option></select></div>
+  <button id="th" class="ghost icon" type="button" aria-label="Light or dark theme">☼</button>
+ </div></div></header>
+<main id="top">
+ <div class="intro"><p class="eyebrow">Jaimini Upadesa Sutras · Lahiri ayanamsha</p><p class="sub">Chara Karakas, Karakamsa, Arudha Padas, Argala and Chara Dasha, with readings taken sutra by sutra from Adhyaya 1.</p></div>
+ <details class="card birth-card" id="fd" open>
+  <summary><span class="summary-title"><span class="step">01</span><span>Birth details</span></span><span id="fs" class="fs"></span></summary>
+  <div class="f birth-fields">
+   <div class="date-field"><label for="dt">Date &amp; time of birth</label><input id="dt" type="datetime-local" value="2020-09-13T19:20"><button id="nw" class="ghost sm" type="button">Use current time</button></div>
+   <div><label for="sx">Gender (changes wording and Su 2.4.7 reference)</label><select id="sx"><option value="M">Male</option><option value="F">Female</option><option value="N">Prefer not to say</option></select></div>
+   <div class="place-field"><label for="ps">Search place</label><input id="ps" placeholder="Type a city name…" autocomplete="off" aria-controls="pr"><div id="pr" class="pr" role="listbox"></div></div>
+   <div><label for="asof">Reading date (for running dasha)</label><input id="asof" type="date"></div>
+  </div>
+  <details class="adv"><summary>Coordinates and place database</summary><div class="f advanced-fields">
+   <div><label for="la">Latitude (N+)</label><input id="la" type="number" step="any"></div>
+   <div><label for="lo">Longitude (E+)</label><input id="lo" type="number" step="any"></div>
+   <div><label for="tz">UTC offset (hours)</label><input id="tz" type="number" step="0.25"></div>
+   <div class="import-field"><label for="pf">Import your own places (CSV/JSON: name, lat, lon, tz)</label><input id="pf" type="file" accept=".csv,.json,.txt"><small id="pc"></small></div></div></details>
+  <button id="go" class="wide">Generate Jaimini Kundli</button>
+ </details>
+ <nav id="tb" class="tabs" role="tablist"></nav>
+ <div id="out" aria-live="polite"></div>
+ <p class="footnote">Planet positions come from the supplied daily ephemeris table (1930–2061, cubic interpolation); outside it compact formulas (about 0.1–0.5°) are used. Classical readings are traditional statements, not guarantees.</p>
+</main>
+<script src="js/core.js?v=1"></script>
+<script src="js/chart.js?v=1"></script>
+<script src="js/engine.js?v=1"></script>
+<script src="js/rules.js?v=1"></script>
+<script src="js/app.js?v=1"></script>
+</body>
+</html>
