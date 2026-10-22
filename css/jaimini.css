@@ -1,0 +1,18 @@
+/* Jaimini Kundli additions: tab visibility for the new sections and a few components. */
+body[data-tab="karaka"] [data-t="karaka"],body[data-tab="pada"] [data-t="pada"],body[data-tab="areas"] [data-t="areas"],body[data-tab="areas"] #out > [data-t="areas"],body[data-tab="pred"] [data-t="pred"],body[data-tab="strength"] [data-t="strength"],body[data-tab="strength"] #out > [data-t="strength"],body[data-tab="about"] [data-t="about"],
+body[data-tab="karaka"] #out > [data-t="karaka"],body[data-tab="pada"] #out > [data-t="pada"],body[data-tab="pred"] #out > [data-t="pred"],body[data-tab="about"] #out > [data-t="about"]{display:block}
+.pred{padding:12px 0;border-bottom:1px solid var(--border)}
+.pred:last-child{border-bottom:0}
+.pred b.su{display:inline-block;margin-right:8px;padding:1px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent-strong);font:600 12px Arial,sans-serif}
+.pred .why{display:block;margin-top:3px;color:var(--muted);font-size:12.5px}
+.tag{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:999px;font:600 11px Arial,sans-serif;background:var(--accent-soft);color:var(--accent-strong)}
+.tag.good{background:#dff0e2;color:#25502f}.tag.bad{background:#f6dcd6;color:#7a2b1c}
+:root[data-theme="dark"] .tag.good{background:#24382a;color:#b9e5c1}:root[data-theme="dark"] .tag.bad{background:#3d2420;color:#f2b9ac}
+details.md{margin:6px 0;border:1px solid var(--border);border-radius:8px;padding:6px 10px}
+details.md summary{cursor:pointer;font-weight:600}
+.charts2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.sc{overflow-x:auto}.sc table{min-width:520px}
+.states td small{display:block;color:var(--muted)}
+@media print{body [data-t]{display:block!important}}
+
+.area{display:grid;gap:6px}.area .hd{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.area ul{margin:4px 0 8px 18px}
