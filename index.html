@@ -13,7 +13,8 @@
 <body data-tab="sum">
 <header class="top"><div class="wrap">
  <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M18 4.5c2.9 4 3.1 7.4 0 10.2-3.1-2.8-2.9-6.2 0-10.2Z"/><path d="M18 31.5c-2.9-4-3.1-7.4 0-10.2 3.1 2.8 2.9 6.2 0 10.2Z"/><path d="M4.5 18c4-2.9 7.4-3.1 10.2 0-2.8 3.1-6.2 2.9-10.2 0Z"/><path d="M31.5 18c-4 2.9-7.4 3.1-10.2 0 2.8-3.1 6.2-2.9 10.2 0Z"/><circle cx="18" cy="18" r="3.1"/></svg></span><span class="brand-name">Jaimini Kundli</span></a>
- <div class="ctl">
+<div class="ctl">
+  <div class="pref"><label for="lg">Language</label><select id="lg" aria-label="Language"></select></div>
     <div class="pref"><label for="ps2">Arudha rule</label><select id="ps2"><option value="std">Standard (10th / 4th correction)</option><option value="literal">Literal (Rao’s notes, none)</option></select></div>
   <div class="pref style-pref"><label for="cs">Chart style</label><select id="cs"><option value="e">East Indian</option><option value="n">North Indian</option><option value="s">South Indian</option></select></div>
   <button id="th" class="ghost icon" type="button" aria-label="Light or dark theme">☼</button>
@@ -40,6 +41,8 @@
  <p class="footnote">Planet positions come from the supplied daily ephemeris table (1930–2061, cubic interpolation); outside it compact formulas (about 0.1–0.5°) are used. Classical readings are traditional statements, not guarantees.</p>
 </main>
 <script src="js/core.js?v=1"></script>
+<script src="js/i18n.js?v=1"></script>
+<script src="js/i18n-data.js?v=1"></script>
 <script src="js/chart.js?v=1"></script>
 <script src="js/engine.js?v=1"></script>
 <script src="js/rules.js?v=1"></script>
