@@ -1,5 +1,5 @@
 /* Jaimini Kundli additions: tab visibility for the new sections and a few components. */
-body[data-tab="karaka"] [data-t="karaka"],body[data-tab="pada"] [data-t="pada"],body[data-tab="areas"] [data-t="areas"],body[data-tab="areas"] #out > [data-t="areas"],body[data-tab="pred"] [data-t="pred"],body[data-tab="strength"] [data-t="strength"],body[data-tab="strength"] #out > [data-t="strength"],body[data-tab="about"] [data-t="about"],
+body[data-tab="karaka"] [data-t="karaka"],body[data-tab="pada"] [data-t="pada"],body[data-tab="overall"] [data-t="overall"],body[data-tab="overall"] #out > [data-t="overall"],body[data-tab="areas"] [data-t="areas"],body[data-tab="areas"] #out > [data-t="areas"],body[data-tab="pred"] [data-t="pred"],body[data-tab="strength"] [data-t="strength"],body[data-tab="strength"] #out > [data-t="strength"],body[data-tab="about"] [data-t="about"],
 body[data-tab="karaka"] #out > [data-t="karaka"],body[data-tab="pada"] #out > [data-t="pada"],body[data-tab="pred"] #out > [data-t="pred"],body[data-tab="about"] #out > [data-t="about"]{display:block}
 .pred{padding:12px 0;border-bottom:1px solid var(--border)}
 .pred:last-child{border-bottom:0}
@@ -16,3 +16,5 @@ details.md summary{cursor:pointer;font-weight:600}
 @media print{body [data-t]{display:block!important}}
 
 .area{display:grid;gap:6px}.area .hd{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.area ul{margin:4px 0 8px 18px}
+
+.narr{line-height:1.7}.sub{margin:6px 0 6px 12px;padding-left:10px;border-left:2px solid var(--border)}h3{margin:10px 0 4px;font-size:15px}
